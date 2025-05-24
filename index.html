@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حاسبة السعرات الحرارية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 حاسبة السعرات الحرارية</h1>
+        <form id="calorieForm">
+            <label>الجنس:</label>
+            <select id="gender">
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+            </select>
+
+            <label>الوزن (كجم):</label>
+            <input type="number" id="weight" required>
+
+            <label>الطول (سم):</label>
+            <input type="number" id="height" required>
+
+            <label>العمر (سنة):</label>
+            <input type="number" id="age" required>
+
+            <label>مستوى النشاط:</label>
+            <select id="activity">
+                <option value="1.2">قليل الحركة</option>
+                <option value="1.375">نشاط خفيف</option>
+                <option value="1.55">نشاط متوسط</option>
+                <option value="1.725">نشاط عالي</option>
+                <option value="1.9">نشاط عالي جداً</option>
+            </select>
+
+            <button type="button" onclick="calculateCalories()">احسب</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
